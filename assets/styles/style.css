@@ -358,7 +358,7 @@ img.twelve-pixels {
   position:relative;
 }
 .intro:after {
-  background: radial-gradient(130% 44% at 41% 40%,rgba(0,0,0,0) 0,#151515 100%);
+  background: radial-gradient(130% 50% at 50% 35%, rgba(255, 255, 255, 0) 0%, #151515 100%);
   width: 100%;
   height: 100%;
   content: "";
@@ -531,7 +531,7 @@ img.twelve-pixels {
   left: -12px;
 }
 .kids {
-  background: -webkit-linear-gradient(245deg,#05c3ff 0,#151515 40%);
+  background: linear-gradient(245deg,#05c3ff 0,#151515 40%);
 }
 .kids .kids-wrapper {
   display: flex;
@@ -682,8 +682,8 @@ img.twelve-pixels {
   color: #8a570b;
 }
 .filimo {
-  background: radial-gradient(100% 410.68% at 100% 100%,rgba(0,0,0,0) 0,rgba(0,29,13,.54) 53.55%,rgba(0,0,0,0) 100%);
-  background-color: #131612;
+  background: radial-gradient(100% 400% at 100% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 29, 13, 0.5) 55%, rgba(0, 0, 0, 0) 100%);
+  background-color: #121212;
   text-align: center;
   padding: 65px 0 95px 0;
 }
