@@ -297,6 +297,11 @@ img.twelve-pixels {
   justify-content: space-between;
   align-items: center;
 }
+.header .new {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
 .header .menu ul {
   display: flex;
   align-items: center;
@@ -456,6 +461,11 @@ img.twelve-pixels {
 .access .image img {
   width: 100%;
 }
+.access .devices .new-image {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
 .access .devices .icon.mobile img {
   width: 21px;
   height: auto;
@@ -483,6 +493,12 @@ img.twelve-pixels {
 }
 .tv .image img {
   width: 100%;
+}
+.tv .devices .new-image {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  display: inline;
 }
 .tv .devices p.description {
   max-width: 400px;
@@ -790,4 +806,104 @@ img.twelve-pixels {
 .footer ul li.icon.social-platforms ul.hover-box.social-platforms li a i {
   font-size: 20px;
   margin-left: 4px;
+}
+@media only screen and (max-width:1240px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .favorites {
+    padding-top: 60px;
+  }
+  .tv .image {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .tv .devices p.description {
+    max-width: 100%;
+  }
+  .tv .devices .new-image {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+  .tv .devices .new-image img {
+    width: 100%;
+  }
+  .devices .access-description {
+    margin-top: 20px;
+  }
+  .kids .kids-wrapper {
+    gap: 40px;
+    padding: 0;
+  }
+  .footer ul li.icon.links ul.hover-box.links {
+    left: 440px;
+  }
+}
+@media only screen and (max-width:900px) {
+  ul.green-checks {
+    flex-direction: column;
+  }
+  .access .access-wrapper {
+    display: block;
+  }
+  .access .image {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  .access .devices p.description {
+    max-width: 100%;
+  }
+  .access .devices .new-image {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+  .access .devices .new-image img {
+    width: 100%;
+  }
+  .kids .content .buttons-kids {
+    flex-direction: column;
+  }
+  .footer ul li.icon.links ul.hover-box.links {
+    left: 105px;
+  }
+}
+@media only screen and (max-width:780px) {
+  .header .menu.right ul li.logo,
+  .header .menu.left {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  .header .new,
+  .header .new .menu.left {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+  .header .new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .header .new .logo-new a img {
+    height: 25px;
+    width: auto;
+  }
+  .kids .kids-wrapper {
+    flex-direction: column-reverse;
+  }
+  .kids .content {
+    margin-top: 40px;
+  }
+  .kids .content p.description {
+    color: #fff;
+  }
+  .kids .content .buttons-kids {
+    flex-direction: row;
+  }
 }
