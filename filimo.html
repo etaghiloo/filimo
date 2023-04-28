@@ -491,22 +491,34 @@
         <h3 class="title-m">سوالات متداول</h3>
         <p class="description">سوال شایع دیگر کاربران شاید برای شما پیش آمده باشد</p>
         <div class="questions-wrapper">
-          <a class="question-box title-s" href="#">
-            آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </a>
-          <a class="question-box title-s" href="#">
-            آیا فیلیمو برای خارج از ایران در دسترس است؟
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </a>
-          <a class="question-box title-s" href="#">
-            آیا برای تماشای فیلم‌های اکران آنلاین، باید اشتراک بخرم؟
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </a>
-          <a class="question-box title-s" href="#">
-            از کجا می‌توانم نرم‌افزار اندروید یا iOS فیلیمو را دانلود کنم؟
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </a>
+          <div class="question-box" onclick="expander1()" id="qbox1">
+            <div class="question title-s">
+              آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟
+              <i class="fa-sharp fa-solid fa-plus"></i>
+            </div>
+            <p class="description answer">بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به <a href="https://www.aparat.com/v/d2fri/">دانلود از طریق سایت</a> و <a href="https://www.aparat.com/v/lQyvT/">دانلود از طریق  اپلیکیشن</a> را تماشا کنید.</p>
+          </div>
+          <div class="question-box" onclick="expander2()" id="qbox2">
+            <div class="question title-s">
+              آیا فیلیمو برای خارج از ایران در دسترس است؟
+              <i class="fa-sharp fa-solid fa-plus"></i>
+            </div>
+            <p class="description answer">خیر. درحال حاضر تماشای فیلیمو فقط در داخل کشور فعال است و امکان تماشا برای افراد خارج از کشور فعال نیست.</p>
+          </div>
+          <div class="question-box" onclick="expander3()" id="qbox3">
+            <div class="question title-s">
+              آیا برای تماشای فیلم‌های اکران آنلاین، باید اشتراک بخرم؟
+              <i class="fa-sharp fa-solid fa-plus"></i>
+            </div>
+            <p class="description answer">ماشای فیلم‌های اکران آنلاین مانند تماشا در سینمای واقعی است؛ یعنی برای دیدن هر فیلم که در اکران آنلاین است باید بلیت تهیه کنید و به جای رفتن به سالن سینما، 8 ساعت فرصت دارید که آن فیلم را از داخل خانه تماشا کنید.</p>
+          </div>
+          <div class="question-box" onclick="expander4()" id="qbox4">
+            <div class="question title-s">
+              از کجا می‌توانم نرم‌افزار اندروید یا iOS فیلیمو را دانلود کنم؟
+              <i class="fa-sharp fa-solid fa-plus"></i>
+            </div>
+            <p class="description answer">برای نصب نرم‌افزار اندرویدی فیلیمو می‌توانید ازطریق کافه بازار یا مایکت اقدام به دانلود کنید. یا می‌توانید روی گزینه روبرو بزنید و به‌طور مستقیم فایل نرم‌افزار را دریافت کنید. <a href="https://www.filimo.com/android">(دانلود مستقیم نرم‌افزار اندروید)</a> برای دانلود نرم‌افزار iOS فیلیمو نیز کافیست روی گزینه روبرو بزنید و به‌طور مستقیم فایل نرم‌افزار را دریافت کنید. <a href="https://www.filimo.com/app">(دانلود مستقیم نرم‌افزار iOS)</a> </p>
+          </div>
         </div>
       </div>
     </div>
@@ -622,5 +634,19 @@
         </ul>
       </div>
     </div>
+    <script>
+      function expander1 () {
+        document.getElementById("qbox1").classList.toggle("expanded");
+      }
+      function expander2 () {
+        document.getElementById("qbox2").classList.toggle("expanded");
+      }
+      function expander3 () {
+        document.getElementById("qbox3").classList.toggle("expanded");
+      }
+      function expander4 () {
+        document.getElementById("qbox4").classList.toggle("expanded");
+      }
+    </script>
   </body>
 </html>

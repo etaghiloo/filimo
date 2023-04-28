@@ -683,19 +683,46 @@ img.twelve-pixels {
 .questions .questions-wrapper {
   padding: 0 125px;
 }
-.questions a.question-box {
+.questions .question-box {
   background: #ffffff05;
   border: 1px solid #33353d;
   border-radius: 10px;
   padding: 16px;
   margin-bottom: 8px;
+}
+.questions .question-box .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.45rem;
 }
-.questions a.question-box i {
-  color: #8a570b;
+.questions .question-box .question:hover {
+  cursor: pointer;
+}
+.questions .question-box .question i {
+  color: #f4843f;
+}
+.questions .question-box p {
+  height: 0;
+  display: none;
+}
+.questions .question-box.expanded .question {
+  color: #f4843f;
+}
+.questions .question-box.expanded .question i {
+  transform: rotate(45deg);
+}
+.questions .question-box.expanded p {
+  height: auto;
+  color: #b6b6b6;
+  display: block;
+  font-size: 1.35rem;
+  text-align: right;
+  margin-bottom: 0;
+}
+.questions .question-box.expanded p a {
+  color: #fdc13c;
+  font-size: 1.4rem;
 }
 .filimo {
   background: radial-gradient(100% 400% at 100% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 29, 13, 0.5) 55%, rgba(0, 0, 0, 0) 100%);
